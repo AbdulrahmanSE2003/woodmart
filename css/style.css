@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+:root {
+  --body-color: #f3f3f3;
+  --grey-color: #555555;
+  --dark-grey-color: #474646;
+  --accent-color: #22c55e;
+  --main-delay: 0.3s;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+p {
+  color: var(--grey-color);
+  margin: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: var(--body-color);
+}
+.btn-main,
+.btn-sec {
+  background: #000;
+  color: #fff;
+  outline: none;
+  border: 2px solid #000000;
+  padding: 0.9rem 1rem;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition: background-color var(--main-delay), color var(--main-delay);
+  -webkit-transition: background-color var(--main-delay),
+    color var(--main-delay);
+  -moz-transition: background-color var(--main-delay), color var(--main-delay);
+  -ms-transition: background-color var(--main-delay), color var(--main-delay);
+  -o-transition: background-color var(--main-delay), color var(--main-delay);
+}
+.btn-sec {
+  background-color: #fff;
+  color: #000;
+}
+.btn-main:hover {
+  background-color: #fff;
+  color: #000;
+}
+.btn-sec:hover {
+  color: #fff;
+  background-color: #000;
+}
+.pointer {
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------- */
+nav {
+  height: 55px;
+  max-height: 55px;
+  padding: 0.6rem 0;
+  color: var(--dark-grey-color);
+}
+.nav-logo span {
+  font-weight: 600;
+  font-size: 1.4rem;
+  font-family: "Quicksand", sans-serif;
+}
+.nav-links a {
+  color: var(--grey-color);
+  transition: color var(--main-delay);
+  -webkit-transition: color var(--main-delay);
+  -moz-transition: color var(--main-delay);
+  -ms-transition: color var(--main-delay);
+  -o-transition: color var(--main-delay);
+}
+.nav-links a:hover {
+  color: var(--dark-grey-color);
+}
+
+.heart,
+.cart {
+  position: relative;
+}
+.heart::before,
+.cart::before {
+  content: "0";
+  position: absolute;
+  right: -10px;
+  top: -3px;
+  width: 17px;
+  height: 17px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--accent-color);
+  color: var(--body-color);
+  border-radius: 50%;
+  align-items: center;
+  font-size: 0.85rem;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.nav-actions svg {
+  width: 20px;
+}
+/* INFO: Home section */
+#home {
+  height: calc(100vh - 55px);
+}
+.home-img {
+  padding: 5rem 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 0 0 2rem 5rem;
+  height: 100%;
+}
+.home-heading h2 {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.home-heading p {
+  font-weight: 500;
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Wooden Single Drawer",
+    "original_price": 135.78,
+    "discounted_price": 122.2,
+    "discount_percent": 15,
+    "featured": false,
+    "image_url": "images/wooden_single_drawer.jpg",
+    "quick_view": true
+  },
+  {
+    "name": "Wooden Serving Bowl",
+    "original_price": 99.99,
+    "discounted_price": 84.99,
+    "discount_percent": 12,
+    "featured": true,
+    "image_url": "images/wooden_serving_bowl.jpg",
+    "quick_view": true
+  },
+  {
+    "name": "Wooden Glass",
+    "original_price": 29.99,
+    "discounted_price": 26.39,
+    "discount_percent": 18,
+    "featured": false,
+    "image_url": "images/wooden_glass.jpg",
+    "quick_view": true
+  },
+  {
+    "name": "Wooden Cup",
+    "original_price": 19.99,
+    "discounted_price": 16.39,
+    "discount_percent": 15,
+    "featured": false,
+    "image_url": "images/wooden_cup.jpg",
+    "quick_view": true
+  },
+  {
+    "name": "Wooden Coffee Mug",
+    "original_price": 14.99,
+    "discounted_price": 12.74,
+    "discount_percent": 20,
+    "featured": true,
+    "image_url": "images/wooden_coffee_mug.jpg",
+    "quick_view": true
+  },
+  {
+    "name": "Wooden Brush",
+    "original_price": 9.99,
+    "discounted_price": 7.99,
+    "discount_percent": 15,
+    "featured": false,
+    "image_url": "images/wooden_brush.jpg",
+    "quick_view": true
+  },
+  {
+    "name": "Wooden Bottles",
+    "original_price": 24.99,
+    "discounted_price": 21.24,
+    "discount_percent": 25,
+    "featured": true,
+    "image_url": "images/wooden_bottles.jpg",
+    "quick_view": true
+  }
+]
