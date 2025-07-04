@@ -25,7 +25,8 @@ body {
   background-color: var(--body-color);
 }
 .btn-main,
-.btn-sec {
+.btn-sec,
+.btn-trans {
   background: #000;
   color: #fff;
   outline: none;
@@ -43,14 +44,19 @@ body {
   -o-transition: background-color var(--main-delay), color var(--main-delay);
 }
 .btn-sec {
-  background-color: #fff;
+  background-color: var(--body-color);
+  color: #000;
+}
+.btn-trans {
+  background-color: transparent;
   color: #000;
 }
 .btn-main:hover {
   background-color: #fff;
   color: #000;
 }
-.btn-sec:hover {
+.btn-sec:hover,
+.btn-trans:hover {
   color: #fff;
   background-color: #000;
 }
@@ -58,11 +64,16 @@ body {
   cursor: pointer;
 }
 
+.section-padding {
+  padding: 3rem 1rem 2rem;
+}
+
 /* ---------------------------------------------------------------- */
 nav {
   height: 55px;
   max-height: 55px;
   padding: 0.6rem 0;
+  background-color: var(--body-color);
   color: var(--dark-grey-color);
   position: fixed;
   top: 0;
@@ -75,6 +86,8 @@ nav {
   font-family: "Quicksand", sans-serif;
 }
 .nav-links a {
+  font-weight: 500;
+  font-size: 0.83rem;
   color: var(--grey-color);
   transition: color var(--main-delay);
   -webkit-transition: color var(--main-delay);
@@ -82,10 +95,15 @@ nav {
   -ms-transition: color var(--main-delay);
   -o-transition: color var(--main-delay);
 }
+.nav-links a.active {
+  color: var(--accent-color);
+}
 .nav-links a:hover {
   color: var(--dark-grey-color);
 }
-
+.nav-actions {
+  font-weight: 400;
+}
 .heart,
 .cart {
   position: relative;
@@ -119,6 +137,8 @@ nav {
   background: var(--accent-color);
   width: 0%;
   border-radius: 12px;
+  position: absolute;
+  bottom: 0;
 }
 /* INFO: Home section */
 #home {
@@ -145,4 +165,34 @@ nav {
 }
 .home-heading p {
   font-weight: 500;
+}
+/* INFO: Best seller section */
+#discounts h5 {
+  font-size: 2.3rem;
+}
+#discounts p {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.prod-1 {
+  min-height: 650px;
+  background-image: url("../assets/product1-1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.prod-2 {
+  height: 50%;
+  min-height: 300px;
+  background-image: url(../assets/product2.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.prod-3 {
+  height: 50%;
+  min-height: 325px;
+  background-image: url(../assets/product3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
