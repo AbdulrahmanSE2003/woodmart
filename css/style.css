@@ -64,6 +64,10 @@ nav {
   max-height: 55px;
   padding: 0.6rem 0;
   color: var(--dark-grey-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .nav-logo span {
   font-weight: 600;
@@ -110,9 +114,15 @@ nav {
 .nav-actions svg {
   width: 20px;
 }
+.my-progress-bar {
+  height: 4px;
+  background: var(--accent-color);
+  width: 0%;
+  border-radius: 12px;
+}
 /* INFO: Home section */
 #home {
-  height: calc(100vh - 55px);
+  height: 100vh;
 }
 .home-img {
   padding: 5rem 80px;
