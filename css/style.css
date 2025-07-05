@@ -4,6 +4,7 @@
   --grey-color: #555555;
   --dark-grey-color: #474646;
   --accent-color: #22c55e;
+  --dark-accent: #0d775e;
   --main-delay: 0.3s;
 }
 a {
@@ -67,6 +68,9 @@ body {
 .section-padding {
   padding: 3rem 1rem 2rem;
 }
+.bg-main {
+  background-color: var(--body-color);
+}
 
 /* ---------------------------------------------------------------- */
 nav {
@@ -79,6 +83,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
 }
 .nav-logo span {
   font-weight: 600;
@@ -176,7 +181,7 @@ nav {
 }
 .prod-1 {
   min-height: 650px;
-  background-image: url("../assets/product1-1.png");
+  background-image: url("../assets/prod1.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -184,7 +189,7 @@ nav {
 .prod-2 {
   height: 50%;
   min-height: 300px;
-  background-image: url(../assets/product2.png);
+  background-image: url(../assets/prod2.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -192,7 +197,95 @@ nav {
 .prod-3 {
   height: 50%;
   min-height: 325px;
-  background-image: url(../assets/product3.png);
+  background-image: url(../assets/prod3.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* products section */
+#products h5 {
+  font-size: 1.7rem;
+  margin-left: 30px;
+  position: relative;
+}
+#products h5::before {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: -60px;
+  background-color: var(--accent-color);
+  opacity: 0;
+  transition: opacity 0.5s, left 0.5s;
+  -webkit-transition: opacity 0.5s, left 0.5s;
+  -moz-transition: opacity 0.5s, left 0.5s;
+  -ms-transition: opacity 0.5s, left 0.5s;
+  -o-transition: opacity 0.5s, left 0.5s;
+}
+#products:hover h5::before {
+  opacity: 1;
+  left: -30px;
+}
+.card-title {
+  position: relative;
+  z-index: 1;
+}
+#products .row .col-3 .action {
+  width: 100%;
+  height: 50px;
+  opacity: 0;
+  padding: 0.4rem 0.6rem;
+  bottom: 0;
+  left: 16px;
+  transition: opacity 0.5s, bottom 0.5s;
+  -webkit-transition: opacity 0.5s, bottom 0.5s;
+  -moz-transition: opacity 0.5s, bottom 0.5s;
+  -ms-transition: opacity 0.5s, bottom 0.5s;
+  -o-transition: opacity 0.5s, bottom 0.5s;
+}
+#products .row .col-3:hover .action {
+  opacity: 1;
+  bottom: 135px;
+}
+#products .row .col-3 .action button {
+  font-size: 0.65rem;
+  height: 100%;
+  padding: 0.3rem 0.6rem;
+}
+#products .row .col-3 .action svg {
+  width: 20px;
+}
+.card-title h6,
+.card-title span.old-price {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--grey-color);
+}
+.card-title span.old-price,
+.card-title span.price {
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+.card-title span.price {
+  color: var(--dark-accent);
+  text-decoration: none;
+}
+.card-title i {
+  color: #ff8a00;
+}
+.card-title i.empty {
+  color: #ddd;
+}
+.featured,
+.discount {
+  padding: 0.4rem 1.2rem;
+  background: var(--dark-accent);
+  color: var(--body-color);
+  font-weight: 600;
+}
+.discount {
+  background-color: #000;
 }

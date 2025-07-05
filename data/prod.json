@@ -5,8 +5,8 @@
     "discounted_price": 122.2,
     "discount_percent": 15,
     "featured": false,
-    "image_url": "images/wooden_single_drawer.jpg",
-    "quick_view": true
+    "image_url": "assets/product1.png",
+    "rating": 4.3
   },
   {
     "name": "Wooden Serving Bowl",
@@ -14,8 +14,8 @@
     "discounted_price": 84.99,
     "discount_percent": 12,
     "featured": true,
-    "image_url": "images/wooden_serving_bowl.jpg",
-    "quick_view": true
+    "image_url": "assets/product2.png",
+    "rating": 4.8
   },
   {
     "name": "Wooden Glass",
@@ -23,8 +23,8 @@
     "discounted_price": 26.39,
     "discount_percent": 18,
     "featured": false,
-    "image_url": "images/wooden_glass.jpg",
-    "quick_view": true
+    "image_url": "assets/product3.png",
+    "rating": 3.2
   },
   {
     "name": "Wooden Cup",
@@ -32,8 +32,8 @@
     "discounted_price": 16.39,
     "discount_percent": 15,
     "featured": false,
-    "image_url": "images/wooden_cup.jpg",
-    "quick_view": true
+    "image_url": "assets/product4.png",
+    "rating": 4.2
   },
   {
     "name": "Wooden Coffee Mug",
@@ -41,8 +41,8 @@
     "discounted_price": 12.74,
     "discount_percent": 20,
     "featured": true,
-    "image_url": "images/wooden_coffee_mug.jpg",
-    "quick_view": true
+    "image_url": "assets/product5.png",
+    "rating": 4.7
   },
   {
     "name": "Wooden Brush",
@@ -50,8 +50,8 @@
     "discounted_price": 7.99,
     "discount_percent": 15,
     "featured": false,
-    "image_url": "images/wooden_brush.jpg",
-    "quick_view": true
+    "image_url": "assets/product6.png",
+    "rating": 3.4
   },
   {
     "name": "Wooden Bottles",
@@ -59,7 +59,16 @@
     "discounted_price": 21.24,
     "discount_percent": 25,
     "featured": true,
-    "image_url": "images/wooden_bottles.jpg",
-    "quick_view": true
+    "image_url": "assets/product7.png",
+    "rating": 4.1
+  },
+  {
+    "name": "Luxury Chair",
+    "original_price": 799.99,
+    "discounted_price": 599.24,
+    "discount_percent": 25,
+    "featured": true,
+    "image_url": "assets/product8.png",
+    "rating": 4.6
   }
 ]
