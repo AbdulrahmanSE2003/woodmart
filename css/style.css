@@ -289,3 +289,9 @@ nav {
 .discount {
   background-color: #000;
 }
+
+/* Features Section */
+#features h6 {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+}
