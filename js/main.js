@@ -91,3 +91,34 @@ function renderStarsInline(rating) {
     emptyStarSVG.repeat(empty)
   );
 }
+
+// !INFO: Carousel
+const track = document.querySelector("#recent .carousel-track");
+const slides = track.querySelectorAll(".col-3");
+let index = 0;
+const slideWidth = 320;
+
+const maxIndex = slides.length - 4;
+
+function changeSlide() {
+  track.style.transition = "transform 0.5s ease";
+  track.style.transform = `translateX(-${index * slideWidth}px)`;
+}
+
+// زراير التحكم
+const nextBtn = document.querySelector("#recent button.next");
+nextBtn.addEventListener("click", () => {
+  index = index + 1 > maxIndex ? 0 : index + 1;
+  changeSlide();
+});
+
+const prevBtn = document.querySelector("#recent button.prev");
+prevBtn.addEventListener("click", () => {
+  index = index - 1 < 0 ? maxIndex : index - 1;
+  changeSlide();
+});
+
+setInterval(() => {
+  index = index + 1 > maxIndex ? 0 : index + 1;
+  changeSlide();
+}, 3500);
