@@ -102,7 +102,9 @@ function addCards(products) {
                     </div>`
                     : ""
                 }
-                <div class="discount position-absolute top-0 start-0">15%</div>
+                <div class="discount position-absolute top-0 start-0">${
+                  prod.discount_percent
+                }%</div>
                 <div
                 class="action position-absolute d-flex justify-content-center align-items-stretch row px-2 gap-2"
               >
