@@ -13,10 +13,12 @@
   </head>
   <body>
     <nav>
-      <div class="container">
+      <div class="container px-sm-0 px-2">
         <div class="row">
-          <div class="col-8">
-            <div class="d-flex justify-content-start gap-1 align-items-center">
+          <div class="col-md-8">
+            <div
+              class="d-flex justify-content-md-start justify-content-center gap-1 align-items-center"
+            >
               <div
                 class="nav-logo d-flex justify-content-start align-items-center gap-2"
               >
@@ -61,7 +63,7 @@
               </ul>
             </div>
           </div>
-          <div class="col">
+          <div class="col d-md-block d-none">
             <div
               class="nav-actions d-flex justify-content-end align-items-center gap-3"
             >
@@ -131,8 +133,10 @@
     <section id="home">
       <div class="container-fluid h-100">
         <div class="row h-100">
-          <div class="col-6 h-100">
-            <div class="d-flex h-100">
+          <div class="col-lg-6 h-100">
+            <div
+              class="d-flex h-100 justify-content-lg-start justify-content-center"
+            >
               <div class="home-heading">
                 <h2>
                   Explore Natural <br />
@@ -183,7 +187,7 @@
               </div>
             </div>
           </div>
-          <div class="col-6 h-100 pe-0">
+          <div class="col-6 h-100 pe-0 d-lg-block d-none">
             <div class="home-img bg-white h-100">
               <img src="assets/home.png" class="h-100" alt="" width="65%" />
             </div>
@@ -194,8 +198,10 @@
     <section id="discounts" class="bg-white section-padding px-1">
       <div class="container-fluid h-100 px-3">
         <div class="row">
-          <div class="col-6">
-            <div class="product prod-1 d-flex p-3 align-items-end pb-5 gap-5">
+          <div class="col-md-6">
+            <div
+              class="product prod-1 d-flex flex-sm-row flex-column p-3 align-items-end justify-content-sm-center justify-content-end pb-sm-5 gap-5"
+            >
               <div class="prod-title">
                 <h5>Wooden Water Bottles</h5>
                 <p class="text-muted">Up to 60% Off Now</p>
@@ -203,7 +209,7 @@
               <button class="btn-trans">Shop Now</button>
             </div>
           </div>
-          <div class="col-6 row g-4 flex-column m-0">
+          <div class="col-md-6 row g-4 flex-column m-0">
             <div class="col-6 w-100 p-0 m-0">
               <div class="product prod-2">
                 <div
@@ -215,7 +221,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-6 w-100">
+            <div class="col-6 w-100 p-0">
               <div class="product prod-3">
                 <div
                   class="prod-title h-100 d-flex p-3 align-items-end justify-content-end gap-2 flex-column"
@@ -239,7 +245,7 @@
     <section id="features" class="bg-white section-padding px-3">
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-md-4">
             <div
               class="d-flex flex-column gap-2 justify-content-center align-items-center p-3 px-4 text-center"
             >
@@ -272,7 +278,7 @@
               </p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div
               class="d-flex flex-column gap-2 justify-content-center align-items-center p-3 px-4 text-center"
             >
@@ -301,7 +307,7 @@
               </p>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-md-4">
             <div
               class="d-flex flex-column gap-2 justify-content-center align-items-center p-3 px-4 text-center"
             >
@@ -409,42 +415,42 @@
             </svg>
           </button>
           <div class="carousel-track row flex-nowrap">
-            <div class="col-3">
+            <div class="carousel-slide">
               <div>
                 <img src="assets/product1.png" class="w-100" alt="" />
               </div>
             </div>
-            <div class="col-3">
+            <div class="carousel-slide">
               <div>
                 <img src="assets/product2.png" class="w-100" alt="" />
               </div>
             </div>
-            <div class="col-3">
+            <div class="carousel-slide">
               <div>
                 <img src="assets/product3.png" class="w-100" alt="" />
               </div>
             </div>
-            <div class="col-3">
+            <div class="carousel-slide">
               <div>
                 <img src="assets/product4.png" class="w-100" alt="" />
               </div>
             </div>
-            <div class="col-3">
+            <div class="carousel-slide">
               <div>
                 <img src="assets/product5.png" class="w-100" alt="" />
               </div>
             </div>
-            <div class="col-3">
+            <div class="carousel-slide">
               <div>
                 <img src="assets/product6.png" class="w-100" alt="" />
               </div>
             </div>
-            <div class="col-3">
+            <div class="carousel-slide">
               <div>
                 <img src="assets/product7.png" class="w-100" alt="" />
               </div>
             </div>
-            <div class="col-3">
+            <div class="carousel-slide">
               <div>
                 <img src="assets/product8.png" class="w-100" alt="" />
               </div>
@@ -454,11 +460,11 @@
       </div>
     </section>
     <footer class="p-4 px-3 bg-black text-white">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6">
             <div
-              class="logo d-flex justify-content-start align-items-center p-3 pt-1 gap-3 w-100"
+              class="logo d-flex flex-column-reverse justify-content-center align-items-lg-start align-items-center p-3 pt-1 gap-3 w-100"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -481,11 +487,11 @@
               <span>Woodmart</span>
             </div>
           </div>
-          <div class="col-3">
-            <div class="mt-1 p-3">
+          <div class="col-lg-3 col-md-6">
+            <div class="mt-1 p-3 text-md-start text-center">
               <h6>Company</h6>
               <ul
-                class="p-0 d-flex flex-column justify-content-center align-items-start gap-2 list-unstyled"
+                class="p-0 d-flex flex-column justify-content-center align-items-md-start align-items-center gap-2 list-unstyled"
               >
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Careers</a></li>
@@ -495,11 +501,11 @@
             </div>
           </div>
 
-          <div class="col-3">
-            <div class="mt-1 p-3">
+          <div class="col-lg-3 col-md-6">
+            <div class="mt-1 p-3 text-md-start text-center">
               <h6>Support</h6>
               <ul
-                class="p-0 d-flex flex-column justify-content-center align-items-start gap-2 list-unstyled"
+                class="p-0 d-flex flex-column justify-content-center align-items-md-start align-items-center gap-2 list-unstyled"
               >
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Help Center</a></li>
@@ -509,11 +515,11 @@
             </div>
           </div>
 
-          <div class="col-3">
-            <div class="mt-1 p-3">
+          <div class="col-lg-3 col-md-6">
+            <div class="mt-1 p-3 text-md-start text-center">
               <h6>Follow Us</h6>
               <ul
-                class="p-0 d-flex flex-column justify-content-center align-items-start gap-2 list-unstyled"
+                class="p-0 d-flex flex-column justify-content-center align-items-md-start align-items-center gap-2 list-unstyled"
               >
                 <li><a href="#">Facebook</a></li>
                 <li><a href="#">Instagram</a></li>

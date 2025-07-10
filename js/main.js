@@ -21,7 +21,7 @@ fetch("../data/prod.json")
 
 function addCards(products) {
   products.forEach((prod) => {
-    let card = `<div class="col-3 position-relative">
+    let card = `<div class="col-lg-3 col-md-6 position-relative">
               <div class="d-flex flex-column position-relative">
                 ${
                   prod.featured
@@ -32,12 +32,12 @@ function addCards(products) {
                 }
                 <div class="discount position-absolute top-0 start-0">15%</div>
                 <div
-                class="action position-absolute d-flex justify-content-center align-items-stretch row px-4 gap-0"
+                class="action position-absolute d-flex justify-content-center align-items-stretch row px-2 gap-2"
               >
                 <div class="col h-100 px-0">
                   <button class="btn-main">Quick View</button>
                 </div>
-                <div class="col-7 h-100 d-flex justify-content-center gap-3">
+                <div class="col-7 h-100 d-flex justify-content-end gap-3">
                   <div class="h-100">
                     <button class="btn-main">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-cart-icon lucide-shopping-cart"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
@@ -94,18 +94,33 @@ function renderStarsInline(rating) {
 
 // !INFO: Carousel
 const track = document.querySelector("#recent .carousel-track");
-const slides = track.querySelectorAll(".col-3");
+const slides = track.querySelectorAll(".carousel-slide");
 let index = 0;
-const slideWidth = 320;
+let slideWidth = 330;
+let maxIndex = slides.length - 4;
 
-const maxIndex = slides.length - 4;
+if (window.innerWidth <= 992) {
+  slideWidth = 280;
+  maxIndex = slides.length - 2;
+}
+if (window.innerWidth <= 768) {
+  slideWidth = 300;
+  maxIndex = slides.length - 1;
+}
+if (window.innerWidth <= 640) {
+  slideWidth = 520;
+  maxIndex = slides.length - 1;
+}
+if (window.innerWidth <= 500) {
+  slideWidth = 360;
+  maxIndex = slides.length - 1;
+}
 
 function changeSlide() {
   track.style.transition = "transform 0.5s ease";
   track.style.transform = `translateX(-${index * slideWidth}px)`;
 }
 
-// زراير التحكم
 const nextBtn = document.querySelector("#recent button.next");
 nextBtn.addEventListener("click", () => {
   index = index + 1 > maxIndex ? 0 : index + 1;

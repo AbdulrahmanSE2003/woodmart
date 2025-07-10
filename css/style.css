@@ -238,7 +238,7 @@ nav {
   position: relative;
   z-index: 1;
 }
-#products .row .col-3 .action {
+#products .row .action {
   width: 100%;
   height: 50px;
   opacity: 0;
@@ -251,16 +251,16 @@ nav {
   -ms-transition: opacity 0.5s, bottom 0.5s;
   -o-transition: opacity 0.5s, bottom 0.5s;
 }
-#products .row .col-3:hover .action {
+#products .row :hover .action {
   opacity: 1;
   bottom: 135px;
 }
-#products .row .col-3 .action button {
+#products .row .action button {
   font-size: 0.65rem;
   height: 100%;
   padding: 0.3rem 0.6rem;
 }
-#products .row .col-3 .action svg {
+#products .row .action svg {
   width: 20px;
 }
 .card-title h6,
@@ -325,6 +325,29 @@ nav {
   -ms-transition: transform 0.5s;
   -o-transition: transform 0.5s;
 }
+.carousel-slide {
+  flex: 0 0 auto;
+  width: 25%; /* desktop */
+}
+
+@media (max-width: 992px) {
+  .carousel-slide {
+    width: 33.3333%; /* tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    width: 50%; /* mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-slide {
+    width: 100%;
+  }
+}
+
 /* Footer */
 footer .logo {
   font-family: "Quicksand";
@@ -344,4 +367,36 @@ footer a {
 }
 footer a:hover {
   opacity: 1;
+}
+
+/* !INFO: Responsive */
+@media screen and (min-width: 992px) {
+  h6 {
+    font-size: 1.05rem !important;
+  }
+  .card-title h6,
+  .card-title span.old-price {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #discounts .prod-1 {
+    min-height: 300px;
+
+    background-position: top;
+  }
+}
+@media screen and (max-width: 540px) {
+  nav .nav-logo span {
+    font-size: 1rem;
+  }
+  nav .nav-links a {
+    font-size: 0.75rem;
+  }
+  .home-heading {
+    padding: 0px 0 0rem 3rem;
+  }
+  .home-heading h2 {
+    font-size: 2.5rem;
+  }
 }
