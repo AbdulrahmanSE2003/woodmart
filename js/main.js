@@ -12,12 +12,84 @@ window.addEventListener("scroll", () => {
 });
 
 // !INFO: Cards dynamic
+
+const productsList = [
+  {
+    name: "Wooden Single Drawer",
+    original_price: 135.78,
+    discounted_price: 122.2,
+    discount_percent: 15,
+    featured: false,
+    image_url: "assets/product1.png",
+    rating: 4.3,
+  },
+  {
+    name: "Wooden Serving Bowl",
+    original_price: 99.99,
+    discounted_price: 84.99,
+    discount_percent: 12,
+    featured: true,
+    image_url: "assets/product2.png",
+    rating: 4.8,
+  },
+  {
+    name: "Wooden Glass",
+    original_price: 29.99,
+    discounted_price: 26.39,
+    discount_percent: 18,
+    featured: false,
+    image_url: "assets/product3.png",
+    rating: 3.2,
+  },
+  {
+    name: "Wooden Cup",
+    original_price: 19.99,
+    discounted_price: 16.39,
+    discount_percent: 15,
+    featured: false,
+    image_url: "assets/product4.png",
+    rating: 4.2,
+  },
+  {
+    name: "Wooden Coffee Mug",
+    original_price: 14.99,
+    discounted_price: 12.74,
+    discount_percent: 20,
+    featured: true,
+    image_url: "assets/product5.png",
+    rating: 4.7,
+  },
+  {
+    name: "Wooden Brush",
+    original_price: 9.99,
+    discounted_price: 7.99,
+    discount_percent: 15,
+    featured: false,
+    image_url: "assets/product6.png",
+    rating: 3.4,
+  },
+  {
+    name: "Wooden Bottles",
+    original_price: 24.99,
+    discounted_price: 21.24,
+    discount_percent: 25,
+    featured: true,
+    image_url: "assets/product7.png",
+    rating: 4.1,
+  },
+  {
+    name: "Luxury Chair",
+    original_price: 799.99,
+    discounted_price: 599.24,
+    discount_percent: 25,
+    featured: true,
+    image_url: "assets/product8.png",
+    rating: 4.6,
+  },
+];
+
 const cardsHolder = document.querySelector("#products .row");
 let prods;
-
-fetch("../data/prod.json")
-  .then((res) => res.json())
-  .then((data) => addCards(data));
 
 function addCards(products) {
   products.forEach((prod) => {
@@ -70,6 +142,7 @@ function addCards(products) {
     cardsHolder.innerHTML += card;
   });
 }
+
 // INFO: Managing stars
 const fullStarSVG = `
 <i class="fa-solid fa-star"></i>`;
@@ -79,6 +152,7 @@ const halfStarSVG = `
 
 const emptyStarSVG = `
 <i class="fa-solid fa-star empty"></i>`;
+addCards(productsList);
 
 function renderStarsInline(rating) {
   const full = Math.floor(rating);
