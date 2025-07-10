@@ -325,3 +325,23 @@ nav {
   -ms-transition: transform 0.5s;
   -o-transition: transform 0.5s;
 }
+/* Footer */
+footer .logo {
+  font-family: "Quicksand";
+  font-size: 2.7rem;
+  letter-spacing: 0.075rem;
+}
+footer h6 {
+  font-size: 1.4rem;
+}
+footer a {
+  transition: opacity var(--main-delay);
+  opacity: 0.6;
+  -webkit-transition: opacity var(--main-delay);
+  -moz-transition: opacity var(--main-delay);
+  -ms-transition: opacity var(--main-delay);
+  -o-transition: opacity var(--main-delay);
+}
+footer a:hover {
+  opacity: 1;
+}
